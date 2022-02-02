@@ -37,7 +37,7 @@
         android:layout_height="100dp"
         android:layout_margin="10dp"
         android:padding="5dp"
-        android:src="@drawable/band_photo"/>
+        tools:src="@drawable/band_photo"/>
 
 
     <!--Text View to display Course Name-->

@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context="controller.DetailFragment">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="8dp"
+        android:src="@drawable/band_photo"
+        />
+
     <TextView
         android:id="@+id/band_name"
         android:layout_width="match_parent"
@@ -23,11 +30,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Youtube Link"/>
+        tools:text="Youtube Link"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:text="@string/youtube_link"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="List of Songs"/>
+        tools:text="List of Songs"
+        android:text="@string/list_of_songs"
+        android:padding="8dp"
+        android:textSize="24sp"/>
 
 </LinearLayout>

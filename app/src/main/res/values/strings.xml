@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">The Band Database</string>
     <string name="details">Details</string>
+    <string name="youtube_link">YouTube link</string>
+    <string name="list_of_songs">List of Songs</string>
 
     <string-array name="bands">
         <item>The Beatles</item>
@@ -47,4 +49,23 @@
         <item>Date: 2003 - present</item>
 
     </string-array>
+
+    <string-array name="image_url">
+        <item>https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/1/19/Nirvana_around_1992.jpg</item>
+        <item>https://cdn.britannica.com/43/23043–050–7352C07E/U2–1987.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/4/42/LinkinParkBerlin2010.jpg</item>
+        <item>https://cdn.britannica.com/s:1500x700,q:85/72/23172–004–1094DE4F/Abba.jpg</item>
+        <item>https://cdn.britannica.com/s:1500x700,q:85/62/178062–004-DCBA73DF/AC-DC-2009.jpg</item>
+        <item>https://cdn.britannica.com/19/153219–050-AE4DCD21/Aerosmith-Brad-Whitford-Steven-Tyler-Joey-Kramer-1995.jpg</item>
+        <item>https://cdn.britannica.com/47/172847–050–740BE8E6/The-Allman-Brothers-Band-2011.jpg</item>
+        <item>https://cdn.britannica.com/05/199505–050–26FD7315/Mariam-Doumbia-2005.jpg</item>
+        <item>https://cdn.britannica.com/51/98351–050–12961766/Swingtime-Johnny-Poster-Harriet-Hilliard-Maxene-Patty.jpg</item>
+        <item>https://cdn.britannica.com/08/199508–050-E7C99370/Animals-Hilton-Valentine-John-Steel-Eric-Burdon.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/6/6e/Arcade_Fire_%2827463874647%29.jpg</item>
+
+
+    </string-array>
+
+
 </resources>

@@ -1,18 +1,24 @@
 package com.example.thebanddatabase.controller;
 
+import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.thebanddatabase.R;
 import com.example.thebanddatabase.model.Band;
 import com.example.thebanddatabase.model.BandRepository;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -57,6 +63,7 @@ public class ListFragment extends Fragment {
         private final List<Band> mBands;
         private final View.OnClickListener mOnClickListener;
 
+
         public BandAdapter(List<Band> bands, View.OnClickListener onClickListener) {
             mBands = bands;
             mOnClickListener = onClickListener;
@@ -87,16 +94,31 @@ public class ListFragment extends Fragment {
 
         private final TextView mNameTextView;
         private final TextView mDateTextView;
+        private final ImageView mImageView;
 
         public BandHolder(LayoutInflater inflater, ViewGroup parent) {
             super(inflater.inflate(R.layout.list_item_band, parent, false));
             mNameTextView = itemView.findViewById(R.id.band_name);
             mDateTextView = itemView.findViewById(R.id.band_date);
+            mImageView = itemView.findViewById(R.id.bandImage);
+
         }
 
         public void bind(Band band) {
             mNameTextView.setText(band.getName());
             mDateTextView.setText(band.getDate());
+//            Picasso.get()
+//                    .load(band.getmImageURL())
+//                    .placeholder(R.drawable.band_photo)
+//                    .centerCrop()
+//                    .resize(100, 100)
+//                    .into(mImageView);
+
+            Glide.with(itemView.getContext())
+                    .load(band.getmImageURL())
+                    .centerCrop()
+                    .placeholder(R.drawable.band_photo)
+                    .into(mImageView);
         }
     }
 }

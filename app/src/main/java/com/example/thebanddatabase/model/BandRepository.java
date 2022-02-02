@@ -2,9 +2,11 @@ package com.example.thebanddatabase.model;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.net.Uri;
 
 import com.example.thebanddatabase.R;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,8 +28,9 @@ public class BandRepository {
         String[] bands = res.getStringArray(R.array.bands);
         String[] descriptions = res.getStringArray(R.array.descriptions);
         String[] dates = res.getStringArray(R.array.date);
+        String[] imageURL = res.getStringArray(R.array.image_url);
         for (int i = 0; i < bands.length; i++) {
-            mBands.add(new Band(i + 1, bands[i], descriptions[i], dates[i]));
+            mBands.add(new Band(i + 1, bands[i], descriptions[i], dates[i], imageURL[i]));
         }
     }
 

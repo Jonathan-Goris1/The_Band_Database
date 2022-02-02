@@ -1,18 +1,22 @@
 package com.example.thebanddatabase.model;
 
+
 public class Band {
     private int mId;
     private String mName;
     private String mDescription;
     private String mDate;
+    private String mImageURL;
 
     public Band() {}
 
-    public Band(int id, String name, String description, String date) {
+    public Band(int id, String name, String description, String date, String image) {
         mId = id;
         mName = name;
         mDescription = description;
         mDate = date;
+        mImageURL = image;
+
     }
 
     public int getId() {
@@ -42,4 +46,6 @@ public class Band {
     public String getDate(){return mDate;}
 
     public void setDate(String date){this.mDate = date;}
+
+    public String getmImageURL(){return mImageURL;}
 }
