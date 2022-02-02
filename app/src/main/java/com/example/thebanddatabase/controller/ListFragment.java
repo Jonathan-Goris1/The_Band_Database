@@ -42,6 +42,7 @@ public class ListFragment extends Fragment {
             }
         };
 
+
         // Send bands to RecyclerView
         RecyclerView recyclerView = rootView.findViewById(R.id.band_list);
         List<Band> bands = BandRepository.getInstance(requireContext()).getBands();
