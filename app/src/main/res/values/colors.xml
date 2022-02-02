@@ -4,4 +4,8 @@
     <color name="blueberry_400">#42A5F5</color>
     <color name="blueberry_900">#0f46a1</color>
     <color name="white">#FFF</color>
+    <color name="black">#ff000000</color>
+    <color name="ColorPrimary">#ff6750a4</color>
+    <color name="colorPrimaryContainer">#ffeaddff</color>
+    <color name="colorOnPrimaryContainer">#ff21005d</color>
 </resources>

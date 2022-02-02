@@ -8,7 +8,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.thebanddatabase.R;
@@ -48,9 +47,6 @@ public class ListFragment extends Fragment {
         List<Band> bands = BandRepository.getInstance(requireContext()).getBands();
         recyclerView.setAdapter(new BandAdapter(bands, onClickListener));
 
-        DividerItemDecoration divider = new DividerItemDecoration(recyclerView.getContext(),
-                DividerItemDecoration.VERTICAL);
-        recyclerView.addItemDecoration(divider);
 
         return rootView;
     }
@@ -89,14 +85,17 @@ public class ListFragment extends Fragment {
     private static class BandHolder extends RecyclerView.ViewHolder {
 
         private final TextView mNameTextView;
+        private final TextView mDateTextView;
 
         public BandHolder(LayoutInflater inflater, ViewGroup parent) {
             super(inflater.inflate(R.layout.list_item_band, parent, false));
             mNameTextView = itemView.findViewById(R.id.band_name);
+            mDateTextView = itemView.findViewById(R.id.band_date);
         }
 
         public void bind(Band band) {
             mNameTextView.setText(band.getName());
+            mDateTextView.setText(band.getDate());
         }
     }
 }

@@ -4,13 +4,15 @@ public class Band {
     private int mId;
     private String mName;
     private String mDescription;
+    private String mDate;
 
     public Band() {}
 
-    public Band(int id, String name, String description) {
+    public Band(int id, String name, String description, String date) {
         mId = id;
         mName = name;
         mDescription = description;
+        mDate = date;
     }
 
     public int getId() {
@@ -36,4 +38,8 @@ public class Band {
     public void setDescription(String description) {
         this.mDescription = description;
     }
+
+    public String getDate(){return mDate;}
+
+    public void setDate(String date){this.mDate = date;}
 }

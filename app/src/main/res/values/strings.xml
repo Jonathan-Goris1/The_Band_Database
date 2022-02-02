@@ -31,4 +31,20 @@
         <item>the Animals, five-piece rock group from northeastern England whose driving sound influenced Bob Dylan’s decision, in 1965, to begin working with musicians playing electric instruments.</item>
         <item>Arcade Fire, Canadian alternative rock group that surged to international popularity in the early 21st century.</item>
     </string-array>
+
+    <string-array name="date">
+        <item>Date: 1960 – 1970</item>
+        <item>Date: 1987 – 1994</item>
+        <item>Date: 1976 - present</item>
+        <item>Date: 1996 – present</item>
+        <item>Date: 1969 – 1982</item>
+        <item>Date: 1973 – 2016</item>
+        <item>Date: 1970 - present</item>
+        <item>Date: 1969 – 2014</item>
+        <item>Date: 1986 – 2017</item>
+        <item>Date: 1935 – 1948</item>
+        <item>Date: 1964 – 1994</item>
+        <item>Date: 2003 - present</item>
+
+    </string-array>
 </resources>

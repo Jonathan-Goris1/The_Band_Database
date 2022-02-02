@@ -25,8 +25,9 @@ public class BandRepository {
         Resources res = context.getResources();
         String[] bands = res.getStringArray(R.array.bands);
         String[] descriptions = res.getStringArray(R.array.descriptions);
+        String[] dates = res.getStringArray(R.array.date);
         for (int i = 0; i < bands.length; i++) {
-            mBands.add(new Band(i + 1, bands[i], descriptions[i]));
+            mBands.add(new Band(i + 1, bands[i], descriptions[i], dates[i]));
         }
     }
 
